@@ -1,0 +1,150 @@
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+.main-image{
+    flex-basis: 43%;
+    
+}
+.main-image::after{
+    content:"";
+    width: 500px;
+    height: 350px;
+    background-color: #5266df;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    border-bottom-right-radius: 100px;
+    z-index: -1;
+}
+.main-image img{
+    width: 100%;
+    
+}
+.main-text p{
+    margin: 25px 0;
+    width: 450px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #9a9898;
+    
+}
+.main-link{
+    margin-top: 50px;
+}
+.main-btn{
+    padding: 15px 25px;
+    color: white;
+    background-color: #5266df;
+    border: none;
+    border-radius:5px;
+    font-size: 14px;
+    /* margin-top: 50px; */
+}
+@media only screen and (max-width: 1400px){
+    .main-image::after{
+        width: 400px;
+        height: 320px;
+    
+    }
+   
+}
+@media only screen and (max-width: 1300px){
+    .main-image::after{
+        width: 300px;
+        height: 300px;
+    
+    }
+}
+@media only screen and (max-width: 1098px){
+    .main-image::after{
+        width: 300px;
+        height: 280px;
+    
+    }
+    .main-image{
+        flex-basis: 50%;
+    }
+    .main p{
+        max-width: 350px;
+    }
+    
+}
+@media only screen and (max-width: 978px){
+    
+    .main-image::after{
+        width: 300px;
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 851px){ 
+    .main-image::after{
+        width: 340px;
+        height: 200px;
+    }
+}
+@media only screen and (max-width: 739px){
+    .main-image{
+        flex-basis:50%;
+        margin-bottom: 80px;
+        min-height: 150%;
+    
+    }
+    .main{
+        flex-direction: column;
+        justify-content:space-between;
+        
+
+    }
+    .main-image::after{
+        width: 340px;
+        height: 290px;
+        bottom: 150px;
+        margin-bottom: 100px;
+        
+       
+    }
+    .main-text{
+        text-align: center;
+        
+    }
+    .main-link{
+        display: none;
+    }
+  
+}
+@media only screen and (max-width: 550px){
+    .main-image{
+        max-width: 85%;
+
+    }
+    .main-image::after{
+        height: 250px;
+    }
+
+}
+@media only screen and (max-width: 425px){
+    .main-image::after{
+        bottom: 150px;
+        height: 200px;
+        
+    }
+    
+    .main p{
+        font-size: 1rem;
+        padding: 0 35px;
+    }  
+    
+}
+@media only screen and (max-width: 375px){
+    .main-image::after{
+        height: 215px;
+    
+    }
+    
+}

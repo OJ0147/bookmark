@@ -1,0 +1,39 @@
+.download-head{
+    margin-top: 150px;
+    text-align: center;
+}
+.download-head p{
+    color:#9a9898;
+    margin-top: 25px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.download-card{
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+@media only screen and (max-width: 978px){
+    .download-head p{
+        max-width:370px ;
+    }
+    
+}
+@media only screen and (max-width: 739px){
+    .download-card{
+        flex-direction: column;
+        /* max-width: 500px;  */
+        margin:50px auto;
+        
+    }
+}
+@media only screen and (max-width: 425px){
+    .download-head p{
+        font-size: 1rem;
+        padding: 0 35px;
+    }
+   
+}

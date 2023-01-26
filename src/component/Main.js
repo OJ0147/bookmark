@@ -9,7 +9,7 @@ const Main = () => {
   return (
     <div className='main'>
         <div className="main-image">
-            <img src={tab} alt="" />
+            <img src={tab} alt="tab" />
         </div>
 
         <div className="main-text">

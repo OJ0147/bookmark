@@ -148,3 +148,29 @@
     }
     
 }
+@media only screen and (max-width: 360px){
+    .main-image::after{
+        height: 180px;
+        width: 240px;
+    
+    }
+
+}
+@media only screen and (max-width: 320px){
+    .main-image::after{
+        height: 160px;
+        width: 200px;
+        bottom: 120px;
+    }
+    
+    .main-text p{
+        margin: 25px auto;
+        width: 100%;
+        text-align: justify;
+        padding: 0 20px;
+        margin-bottom: 0;
+       
+        
+    }
+
+}

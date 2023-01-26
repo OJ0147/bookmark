@@ -155,6 +155,7 @@
     }
     .image-content{
         margin-bottom: 10px;
+        
     }
     .text-content p{
         font-size: 1rem;
@@ -163,7 +164,6 @@
     .content{
         margin-top: 40px;
     }
-    
     
 }
 @media only screen and (max-width: 375px){
@@ -174,8 +174,42 @@
     }
     .links a{
         padding: 10px 20px;
+    }
+}
+@media only screen and (max-width: 360px){
+    .content::before{
+        bottom: 280px;
+        height: 215px;
+        width: 250px;
+    }
+}
+@media only screen and (max-width:320px){
+    .image-content{
+        max-width: 95%;
+    }
+    .content::before{
+        bottom: 280px;
+        height: 180px;
+        width: 250px;
+    }
+    .text-content h1{
+        font-size: 30px;
+        max-width: 300px;
+        margin:  auto;
+       
+    }
+    .text-content p{
+        max-width: 300px ;
+        margin: 20px auto;
+        padding: 0 20px;
+        text-align: justify;
+    }
+    .text-content{
+        width: 100%;
+        margin: auto;
+    }
+    .links{
+        max-width: 100%;
         
     }
-    
-    
 }
